@@ -1,0 +1,121 @@
+
+html {
+    height: 100vh;
+}
+
+body{
+    background-image: url(mesh-gradient\ \(1\).png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+}
+
+body {  
+    margin: 0 auto; 
+}
+
+.container {
+    width: 1600px;
+    height: 750px;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 80px 1fr;
+    gap: 30px;
+    row-gap: 10px;
+   
+}
+
+.container div:first-child {
+    grid-column: 1/2;
+}
+
+.container div:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.container div:nth-child(3) {
+    grid-column: 4/6;
+} 
+
+.container div:nth-child(4) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.container div:nth-child(5) {
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.container div:nth-child(6) {
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.container div:last-child {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+.glassdiv {
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 16px;
+    box-shadow: 20px 18px 52px -26px rgb(0, 0, 0);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    gap: 15px;
+
+}
+
+.vertical {
+    width: 180px;
+    margin: 18px 0 18px 55px;
+    border-radius: 15px;
+}
+
+.horizontal {
+    width: 430px;
+    margin: 18px 0 18px 90px; 
+    border-radius: 15px; 
+}
+
+section {
+    margin-top: 18px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    margin-left: 100px;
+    position: absolute;
+    border-radius: 40px;
+    border: 1px solid rgba(226, 153, 153, 0.075);
+    background-color: pink;
+    font-size: 35px;
+    color: rgb(236, 134, 151)
+}
+
+button:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    margin: -5px 0 0 95px;
+    font-size: 45px;
+    cursor: pointer;
+}
